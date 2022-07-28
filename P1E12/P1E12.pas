@@ -114,7 +114,9 @@ Begin
   l := Nil;
   For i:=1 To cantidad_sucursales Do
     leer (v[i],vm[i]);
+  writeln ('se cargo vm');
   buscar_minimo (v,vm,min);
+  writeln ('se busco minimo y es ',min.codigo_producto);
   While (min.codigo_producto <> 32000 ) Do
     Begin
       actual := min;
@@ -123,8 +125,9 @@ Begin
         Begin
           suma := suma+min.cantidad_vendida;
           buscar_minimo (v,vm,min);
+          writeln  ('dsf');
         End;
-      actual.cantidad_vendida := actual.cantidad_vendida + suma;
+      actual.cantidad_vendida := suma;
       insertar_ordenado (l,actual);
     End;
 End;
