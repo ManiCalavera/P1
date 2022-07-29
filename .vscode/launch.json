@@ -1,0 +1,28 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "fpDebug",
+            "request": "launch",
+            "name": "Debug Pascal program",
+            "program": "C:\Users\manue\Documents\P1\P1E12\P1E12.exe"
+        },
+
+        {
+            "type": "fpDebug",
+            "request": "launch",
+            "name": "Debug active file as Pascal-program",
+            "program": "${workspaceFolder}/${relativeFileDirname}/${fileBasenameNoExtension}${command:executableExtension}"
+        },
+        {
+            "type": "pwa-chrome",
+            "request": "launch",
+            "name": "Launch Chrome against localhost",
+            "url": "http://localhost:8080",
+            "webRoot": "${workspaceFolder}"
+        }
+    ]
+}
